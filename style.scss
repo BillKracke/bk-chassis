@@ -1,0 +1,46 @@
+/*!
+Theme Name: DebtTrader 2021
+Theme URI: http://debttrader.com
+Author: Canyon Creative // Bill Kracke
+Author URI: http://canyoncreative.com/
+Description: Custom theme: byk_themetitle, developed by Canyon Creative
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: byk_namespace
+
+
+This theme, like WordPress, is licensed under the GPL.
+byk_themetitle is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@import "scss/variables";
+@import "scss/normalize";
+@import "scss/base-typography";
+@import "scss/base-elements";
+@import "scss/base-links";
+
+/* -- MIXINS -- */
+@import "scss/mixin-rfs";
+
+/* -- LAYOUTS -- */
+@import "scss/layouts";
+
+/* -- COMPONENTS -- */
+@import "scss/media.scss";
+@import "scss/base-forms";
+@import "scss/buttons";
+@import "scss/navigation";
+@import "scss/comments";
+@import "scss/widgets";
+@import "scss/modal";
+
+/* -- PLUGIN SUPPORT -- */
+@import "scss/jetpack";
+
+/* -- utility -- */
+@import "scss/utility";

@@ -1,0 +1,76 @@
+@import "mixin-rfs";
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: var(--text-color);
+	font-family: var(--base-font-family);
+	font-size: 1rem;
+	line-height: var(--base-line-height, 1.15);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-weight: 600;
+  
+  &.light-green {
+    color: var(--dt-lightgreen);
+  }
+
+  &.dark-green {
+    color: var(--dt-darkgreen);
+  }
+}
+
+h1, .h1 {
+	@include font-size(2.1em);
+  font-weight: 400;
+  margin-bottom:1rem;
+
+  
+}
+
+h2, .h2 {
+	@include font-size(2.1em);
+  font-weight: 400;
+  margin-bottom:0.5rem;
+
+  & + * {
+    margin-top:0;
+  }
+}
+
+h3, .h3 {
+	@include font-size(1.4em);
+}
+
+p {
+	margin-bottom: var(--typography-gap, 1em);
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 var(--typography-gap, 1em);
+}
+
+address {
+	margin: 0 0 var(--typography-gap, 1em);
+}
+
+big {
+	font-size: 125%;
+}

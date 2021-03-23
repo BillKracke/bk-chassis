@@ -1,0 +1,41 @@
+:root {
+	/* named colors - https://clrs.cc */
+	--navy: #001f3f;
+	--blue: #0074d9;
+	--aqua: #7fdbff;
+	--teal: #39cccc;
+	--olive: #3d9970;
+	--green: #2ecc40;
+	--lime: #01ff70;
+	--yellow: #ffdc00;
+	--orange: #ff851b;
+	--red: #ff4136;
+	--maroon: #85144b;
+	--fuchsia: #f012be;
+	--purple: #b10dc9;
+	--black: #000000;
+	--darkgray: #444444;
+	--darkgrey: var(--darkgray);
+	--gray: #777777;
+	--grey: var(--gray);
+	--silver: #cccccc;
+	--white: #ffffff;
+
+	/* need a brand color? https://brandcolors.net */
+
+	/* body defaults */
+	--base-line-height: 1.5;
+	--base-grid: 0.5rem;
+	--content-width: 1200px;
+
+	/* typography defaults */
+	--base-font-family: "Open Sans", Arial, sans-serif;
+	--typography-gap: 1.5rem;
+
+	/* colors */
+	--text-color: var(--black);
+	--border-color: var(--silver);
+	--link-color: var(--dt-lightgreen);
+	--link-hover-color: var(--dt-darkgreen);
+	--link-visited-color: var(--darkgray);
+}

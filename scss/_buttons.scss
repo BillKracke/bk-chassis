@@ -1,0 +1,131 @@
+:root {
+	--button-text: var(--white);
+	--button-bg: var(--dt-lightgreen);
+	--button-border: var(--dt-lightgreen);
+	/* hover states */
+	--button-hover-text: var(--button-bg);
+	--button-hover-bg: var(--button-text);
+	--button-hover-border: var(--button-bg);
+	/* ghost states */
+	--button-ghost-text: var(--button-bg);
+	--button-ghost-bg: transparent;
+	--button-ghost-border: var(--button-bg);
+	/* ghosted hover states */
+	--button-ghost-hover-text: var(--button-text);
+	--button-ghost-hover-bg: var(--button-bg);
+	--button-ghost-hover-border: var(--button-bg);
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.wp-block-button__link,
+a.button, button {
+	display: inline-block;
+	border: 2px solid;
+	border-color: var(--button-border);
+	border-radius: 3px;
+	background: var(--button-bg);
+	color: var(--button-text);
+	line-height: 1;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	font-weight: 600;
+
+	transition: all 0.3s ease;
+
+	&:hover,
+	&:active,
+	&:focus {
+		border-color: var(--button-hover-border);
+		background: var(--button-hover-bg);
+		color: var(--button-hover-text);
+		transition: all 0.3s ease;
+	}
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.button,
+.wp-block-button__link {
+	&.large,
+	.large & {
+		padding: 1em;
+		font-size: 1.2em;
+		font-weight: 600;
+	}
+
+	&.wide,
+	.wide & {
+		padding-left: 2.5em;
+		padding-right: 2.5em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+
+	&.ghost,
+	.ghost & {
+		border-color: var(--button-ghost-border);
+		background: var(--button-ghost-bg);
+		color: var(--button-ghost-text);
+
+		&:hover,
+		&:active,
+		&:focus {
+			border-color: var(--button-ghost-hover-border);
+			background: var(--button-ghost-hover-bg);
+			color: var(--button-ghost-hover-text);
+		}
+	}
+	/* white */
+	&.white,
+	.white & {
+		--button-text: var(--dt-lightgreen);
+		--button-bg: var(--white);
+		--button-border: var(--white);
+		/* hover states */
+		--button-hover-text: var(--button-bg);
+		--button-hover-bg: var(--button-text);
+		--button-hover-border: var(--button-text);
+		/* ghost states */
+		--button-ghost-text: var(--button-bg);
+		--button-ghost-bg: transparent;
+		--button-ghost-border: var(--button-bg);
+		/* ghosted hover states */
+		--button-ghost-hover-text: var(--button-text);
+		--button-ghost-hover-bg: var(--button-bg);
+		--button-ghost-hover-border: var(--button-bg);
+	}
+	/* dark-green */
+	&.dark-green,
+	.dark-green & {
+		--button-text: var(--white);
+		--button-bg: var(--dt-darkgreen);
+		--button-border: var(--dt-darkgreen);
+		/* hover states */
+		--button-hover-text: var(--button-bg);
+		--button-hover-bg: var(--button-text);
+		--button-hover-border: var(--button-text);
+		/* ghost states */
+		--button-ghost-text: var(--button-bg);
+		--button-ghost-bg: transparent;
+		--button-ghost-border: var(--button-bg);
+		/* ghosted hover states */
+		--button-ghost-hover-text: var(--button-text);
+		--button-ghost-hover-bg: var(--button-bg);
+		--button-ghost-hover-border: var(--button-bg);
+	}
+
+	&.ghost-hover,
+	.ghost-hover & {
+		--button-hover-text: var(--button-bg);
+		--button-hover-bg: transparent;
+		--button-hover-border: var(--button-bg);
+	}
+}
+
+.wp-block-button + .wp-block-button {
+	margin-left: calc(-0.5em - 4px);
+}

@@ -1,0 +1,23 @@
+a {
+  color: var(--link-color);
+  transition: all 0.3s ease;
+}
+
+a:visited {
+	color: var(--link-visited-color);
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: var(--link-hover-color)
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
